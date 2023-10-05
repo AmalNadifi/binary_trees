@@ -13,7 +13,7 @@ binary_tree_t *binary_tree_rotate_left(binary_tree_t *tree)
 
 	/* Check if tree/right child is NULL no rotation can be done*/
 	if (tree == NULL || tree->right == NULL)
-		return (tree);
+		return (NULL);
 
 	/* Updating the right child of the root to be the left child*/
 	tree->right = new_root->left;
